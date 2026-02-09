@@ -1,0 +1,138 @@
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#stars span {
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+}
+
+#stars span.active {
+    color: gold;
+}
+
+.rate{
+    color: gold;
+    font-size: 20px;
+}
+
+@keyframes bounce {
+   0% {transform: scale(1);}
+   30% {transform: scale(1.4);}
+   50% {transform: scale(0.8);}
+   100% {transform: scale(1);}
+}
+
+.bounce {
+    display: inline-block;
+    animation: bounce 0.4s ease;
+}
+
+
+/*いいねボタンの見た目*/
+.like-Btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ccc;
+    transition: transform 0.2s; /*動きを滑らかに*/
+    
+}
+
+.like-Btn.liked {
+    color: #ff4d4f;
+}
+
+/*ホバー（マウスを乗せたとき）に少し大きくする*/
+.like-Btn:hover {
+    transform: scale(1.2);
+}
+
+/*いいねの数字 */
+.like-count {
+    font-size: 14px;
+    color: #666;
+    margin-left: 5px;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI", Roboto, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+}
+
+#book-list {
+    list-style: none;
+    padding: 0;
+}
+
+#book-list li {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#book-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+button {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size:  14px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.like-Btn {
+    background: #ffe3e6;
+    color: #e0245e;
+    font-size: 18px;
+}
+
+.like-Btn.liked {
+    background: #e0245e;
+    color: white;
+}
+
+button:nth-of-type(2) {
+    background: #e3f2fd;
+}
+
+button:nth-of-type(1) {
+    background: #eee;
+}
+
+h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+}
+
+p {
+    margin: 4px 0;
+    line-height: 1.5;
+}
+
+.rate {
+    font-size: 18px;
+    color: #f5b301;
+}
+
+@keyframes bounce {
+    0% {transform: scale(1);}
+    30% {transform: scale(1.4);}
+    60% {transform: scale(0.9);}
+    100% {transform: scale(1);}
+}
